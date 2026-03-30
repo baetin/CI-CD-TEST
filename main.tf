@@ -27,7 +27,6 @@ resource "aws_subnet" "subnet1" {
 resource "aws_instance" "test_instance" {
   ami = "ami-0ecfdfd1c8ae01aec"
   instance_type = "t3.micro"
-  subnet_id       =  aws_subnet.public_subnet.id
 
   tags = {
     Name = "git-instance"
