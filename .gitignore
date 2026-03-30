@@ -1,6 +1,8 @@
+# Terraform 실행 파일 무시
+terraform.exe
+
+# 테라폼 실행 시 생성되는 임시 폴더 및 상태 파일 무시
 .terraform/
-.tfstate
-.tfstate.backup
+*.tfstate
+*.tfstate.backup
 .terraform.lock.hcl
-.tfvars
-.terraform.exe
